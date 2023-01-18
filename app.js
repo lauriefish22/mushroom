@@ -72,6 +72,12 @@ function displayFriends() {
                 mushroomCount--;
                 displayMushrooms();
                 displayFriends();
+            } else if (friend.satisfaction === 3) {
+                alert('Give mushrooms to another friend');
+                return;
+            } else if (mushroomCount === 0) {
+                alert('go forage for more mushrooms!');
+                return;
             }
         });
         friendsEl.append(newFriendEl);

@@ -47,12 +47,11 @@ addFriendButton.addEventListener('click', () => {
     // create a new friend object
     const newFriend = {
         name: friendName,
-        satisfaction: math.ceil(Math.random())
-    }
-    
-    }
+        satisfaction: Math.ceil(Math.random()),
+    };
+
     // push it into the friends state array, passed in as an argument
-    friendsEl.push(newFriend);
+    friendData.push(newFriend);
     // clear out the input element
     friendInputEl.value = '';
     // clear out and display all the friends (use a function here)
